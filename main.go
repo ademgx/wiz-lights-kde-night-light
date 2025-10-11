@@ -63,7 +63,8 @@ func MonitorLampStatus(conn net.PacketConn, addr *net.UDPAddr, interval time.Dur
 			continue
 		}
 		if status.Result != nil {
-			slog.Info("fetched lamp status", "method", *status.Method, "switchedOn", *(*status.Result).State, "scene", *(*status.Result).SceneID, "temp", *(*status.Result).Temp)
+			slog.Info("fetched lamp status");
+			// slog.Info("fetched lamp status", "method", *status.Method, "switchedOn", *(*status.Result).State, "scene", *(*status.Result).SceneID, "temp", *(*status.Result).Temp)
 			switchedOn.Store(*(*status.Result).State)
 		}
 	}
